@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Blog - Theme Preview</title>
+
+    <style>
+      body {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 20px;
+        margin: 0;
+      }
+      .list {
+        text-transform: uppercase;
+        display: flex;
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .dis {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 800;
+        position: relative;
+        z-index: 2;
+      }
+
+      .image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 37, 41, 0.5); /* Buradaki renk ve opaklık değerlerini değiştirin */
+        z-index: 1;
+      }
+      .list li {
+        margin-right: 20px;
+      }
+
+      .list li a {
+        font-size: 0.75rem;
+        color: #fff;
+      }
+      .image {
+        width: 100%;
+        height: 600px;
+        background: #212529;
+        background-image: url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/post-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+      .baslik {
+        font-size: 1.4rem;
+        color: #fff;
+      }
+      .imgortasi {
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 0px;
+        line-height: 20px;
+        position: relative;
+        z-index: 2;
+      }
+      .imgortasi h1 {
+        font-size: 56px;
+        color: #fff;
+        max-width: 900px;
+        line-height: 60px;
+        font-weight: 700;
+      }
+
+      .post-preview > a {
+        color: #212529;
+      }
+      .post-preview > a > .post-subtitle {
+        font-weight: 300;
+        margin-bottom: 0.625rem;
+      }
+
+      .post-preview > p {
+        font-size: 1.125rem;
+        font-style: italic;
+        margin-top: 0;
+        color: #6c757d;
+      }
+
+      .hr {
+        border-color: #dee2e6;
+        opacity: 1;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        font-size: 1px;
+      }
+
+      .buton {
+        width: 12rem;
+        height: 3rem;
+        background-color: #0085a1;
+        font-size: 1.1rem;
+        font-weight: 100;
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        float: right;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        padding: 10px 40px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer ul li {
+        list-style-type: none;
+        background-color: #000;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer ul {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+      }
+      .footer ul li a i {
+        color: #fff;
+        font-size: 34px;
+      }
+      .footer ul li:hover {
+        background-color: #0085a1;
+      }
+      .post-preview {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        max-width: 1000px;
+      }
+      .post-preview-2 {
+        display: flex;
+        flex-direction: column;
+      }
+      .post-preview-3 {
+        display: flex;
+        flex-direction: column;
+      }
+      .post-preview-4 {
+        display: flex;
+        flex-direction: column;
+      }
+      .p {
+        border-bottom: 1px solid gray;
+      }
+      .post-preview p {
+        font-size: 20px;
+        font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <body>
+    <div class="image">
+      <div class="dis">
+        <a class="baslik" href="#">Start Bootstrapt</a>
+
+        <ul class="list">
+          <li><a href="/odevler/index.html">Home</a></li>
+          <li><a href="/odevler/about.html">About</a></li>
+          <li><a href="/odevler/samplepost.html">Sample Post</a></li>
+          <li><a href="/odevler/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="imgortasi">
+        <div>
+          <h1>Man must explore, and this is exploration at its greatest</h1>
+          <h2>Problems look mighty small from 150 miles up</h2>
+          <span>Posted by Start Bootstrap on August 24, 2023</span>
+        </div>
+      </div>
+    </div>
+    <div class="post-preview">
+      <div class="post-preview-2">
+        <p>
+          Never in all their history have men been able truly to conceive of the world as one: a single
+          sphere, a globe, having the qualities of a globe, a round earth in which all the directions
+          eventually meet, in which there is no center because every point, or none, is center — an equal
+          earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round:
+          a globe in practice, not in theory.
+        </p>
+
+        <p>
+          Science cuts two ways, of course; its products can be used for both good and evil. But there's no
+          turning back from science. The early warnings about technological dangers also come from science.
+        </p>
+
+        <p>
+          What was most significant about the lunar voyage was not that man set foot on the Moon but that they
+          set eye on the earth.
+        </p>
+
+        <p>
+          A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her
+          protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could
+          not help but love and cherish her.
+        </p>
+
+        <p>
+          For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who
+          will, the experience most certainly changes your perspective. The things that we share in our world
+          are far more valuable than those which divide us.
+        </p>
+        <h2>The Final Frontier</h2>
+        <p>
+          There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it
+          is a task to occupy the generations. And no matter how much progress one makes, there is always the
+          thrill of just beginning.
+        </p>
+
+        <p>
+          There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it
+          is a task to occupy the generations. And no matter how much progress one makes, there is always the
+          thrill of just beginning.
+        </p>
+
+        <p style="font-style: italic; color: #6c757d">
+          The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet
+          mastered prophecy. We predict too much for the next year and yet far too little for the next ten.
+        </p>
+
+        <p>
+          Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a
+          historical process which mankind is carrying out in accordance with the natural laws of human
+          development.
+        </p>
+
+        <h2>Reaching for the Stars</h2>
+
+        <p>
+          As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size
+          of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so
+          fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing
+          this has to change a man.
+        </p>
+        <div>
+          <img
+            src="https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/post-sample-image.jpg"
+            alt=""
+          />
+          <p
+            style="
+              font-size: 14px;
+              margin-top: 0px;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+            "
+          >
+            To go places and do things that have never been done before – that’s what living is all about.
+          </p>
+        </div>
+
+        <p>
+          Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission:
+          to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man
+          has gone before.
+        </p>
+
+        <p>
+          As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental
+          truth to our nature, Man must explore, and this is exploration at its greatest.
+        </p>
+        <p>
+          Placeholder text by
+          <a style="text-decoration: underline" href="https://spaceipsum.com/">Space Ipsum</a>
+          · Images by
+          <a style="text-decoration: underline" href="https://www.flickr.com/photos/nasacommons/"
+            >NASA on The Commons</a
+          >
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <ul>
+        <li>
+          <a href="https://twitter.com/ilaydasekeer"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/ilayda.seker.37/"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/ilaydasekerr"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+      <div class="footer-alt">
+        <p>Copyright © Your Website 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>

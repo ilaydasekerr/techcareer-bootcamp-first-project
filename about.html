@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Blog - Theme Preview</title>
+
+    <style>
+      body {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+          Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 20px;
+        margin: 0;
+      }
+      .list {
+        text-transform: uppercase;
+        display: flex;
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .dis {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 800;
+        position: relative;
+        z-index: 2;
+      }
+      .list li {
+        margin-right: 20px;
+      }
+
+      .list li a {
+        font-size: 0.75rem;
+        color: #fff;
+      }
+      .image {
+        width: 100%;
+        position: relative;
+        height: 600px;
+        background: #212529;
+        background-image: url(/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.avif);
+        background-size: cover;
+        /*   filter: brightness(0.6); */
+      }
+      .baslik {
+        font-size: 1.4rem;
+        color: #fff;
+      }
+      .imgortasi {
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 150px 0px;
+        line-height: 20px;
+        position: relative;
+        z-index: 2;
+      }
+      .image::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 37, 41, 0.5); /* Buradaki renk ve opaklık değerlerini değiştirin */
+        z-index: 1;
+      }
+      .imgortasi h1 {
+        font-size: 80px;
+        color: #fff;
+      }
+
+      .post-preview > a {
+        color: #212529;
+      }
+      .post-preview > a > .post-subtitle {
+        font-weight: 300;
+        margin-bottom: 0.625rem;
+      }
+
+      .post-preview > p {
+        font-size: 1.125rem;
+        font-style: italic;
+        margin-top: 0;
+        color: #6c757d;
+      }
+
+      .hr {
+        border-color: #dee2e6;
+        opacity: 1;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: 0.25;
+        font-size: 1px;
+      }
+
+      .buton {
+        width: 12rem;
+        height: 3rem;
+        background-color: #0085a1;
+        font-size: 1.1rem;
+        font-weight: 100;
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        float: right;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        padding: 10px 40px;
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer ul li {
+        list-style-type: none;
+        background-color: #000;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer ul {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+      }
+      .footer ul li a i {
+        color: #fff;
+        font-size: 34px;
+      }
+      .footer ul li:hover {
+        background-color: #0085a1;
+      }
+      .post-preview {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .post-preview-2 {
+        padding: 0 700px;
+        display: flex;
+        flex-direction: column;
+      }
+      .post-preview-3 {
+        padding: 0 700px;
+        display: flex;
+        flex-direction: column;
+      }
+      .post-preview-4 {
+        padding: 0 700px;
+        display: flex;
+        flex-direction: column;
+      }
+      .p {
+        border-bottom: 1px solid gray;
+      }
+      .footer-alt {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <body>
+    <div class="image">
+      <div class="dis">
+        <a class="baslik" href="#">Start Bootstrapt</a>
+
+        <ul class="list">
+          <li><a href="/odevler/index.html">Home</a></li>
+          <li><a href="/odevler/about.html">About</a></li>
+          <li><a href="/odevler/samplepost.html">Sample Post</a></li>
+          <li><a href="/odevler/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="imgortasi">
+        <h1>About Me</h1>
+        <span>This is what I do</span>
+      </div>
+    </div>
+    <div class="post-preview">
+      <div class="post-preview-2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit officiis architecto nihil
+          molestiae eaque assumenda dolorum illum. Obcaecati quas iste eaque odio, nobis explicabo inventore
+          dolores! Assumenda repudiandae alias qui?
+        </p>
+      </div>
+    </div>
+
+    <div class="post-preview">
+      <div class="post-preview-3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, vero iste numquam earum eveniet
+          architecto corporis libero cum laboriosam autem animi. Laudantium illum quae earum quod repellendus,
+          ullam vel consectetur?
+        </p>
+      </div>
+    </div>
+
+    <div class="post-preview">
+      <div class="post-preview-4">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, in commodi incidunt eos error
+          mollitia explicabo dolorum at deleniti impedit dolorem quia magni quos officia repellat doloribus
+          modi, odit nam.
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <ul>
+        <li>
+          <a href="https://twitter.com/ilaydasekeer"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/ilayda.seker.37/"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/ilaydasekerr"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+      <div class="footer-alt">
+        <p>Copyright © Your Website 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
